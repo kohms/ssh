@@ -2,6 +2,7 @@
 SSH_FILE="~/.ssh/authorized_keys"
 echo "Old authorized_keys"
 cat ${SSH_FILE}
+set -e
 echo "Download keys"
 curl https://raw.githubusercontent.com/kohms/ssh/main/default > ${SSH_FILE}
 chmod 600 ${SSH_FILE}
