@@ -1,6 +1,7 @@
 #!/bin/bash
 SSH_FILE="~/.ssh/authorized_keys"
 echo "Old authorized_keys"
+mkdir ~/.ssh
 touch ${SSH_FILE}
 cat ${SSH_FILE}
 set -e
