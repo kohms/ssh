@@ -1,6 +1,7 @@
 #!/bin/bash
 SSH_FILE="~/.ssh/authorized_keys"
 echo "Old authorized_keys"
+touch ${SSH_FILE}
 cat ${SSH_FILE}
 set -e
 echo "Download keys"
