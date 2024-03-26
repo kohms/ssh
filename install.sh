@@ -1,5 +1,5 @@
 #!/bin/bash
-SSH_FILE="~/.ssh/authorized_keys"
+SSH_FILE=~/.ssh/authorized_keys
 echo "Old authorized_keys"
 mkdir -p ~/.ssh
 touch ${SSH_FILE}
